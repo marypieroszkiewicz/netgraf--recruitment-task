@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Netgraf - Recruitment Task</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Swiper style CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  <!-- style CSS -->
+  <link rel="stylesheet" href="./scss/style.scss">
+
+</head>
+<body>
+<!-- header -->
+<header class="header">
+  <section class="container">
+    <!-- navigation-->
+    <div class="navigation">
+      <div class="logo">
+        <a href="index.html" class="logo__link">
+          <img src="images/logo.svg" class="logo__img" alt="logo sellingo"></a>
+      </div>
+      <div class="navigation__ctn">
+        <button class="btn-toggle" id="btnToggle" aria-label="Open / Close Menu">
+          <div class="hamburger-container">
+            <div class="hamburger">
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+            </div>
+          </div>
+        </button>
+        <nav class="nav-menu nav-menu--left" role="navigation">
+          <ul class="menu menu--left">
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--1">O nas</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--2">Aktualności</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link--3">Kosz dostawy</a>
+            </li>
+          </ul>
+          <!-- mobile menu bottom -->
+          <div class="menu menu--mobile">
+            <ul class="menu menu--bottom">
+              <li class="menu__item-bottom">
+                <a href="#" class="menu__link-bottom">Damskie</a>
+              </li>
+              <li class="menu__item-bottom">
+                <a href="#" class="menu__link-bottom">Męskie</a>
+              </li>
+              <li class="menu__item-bottom">
+                <a href="#" class="menu__link-bottom">Dziecięce</a>
+              </li>
+              <li class="menu__item-bottom">
+                <a href="#" class="menu__link-bottom">Promocje</a>
+              </li>
+              <li class="menu__item-bottom">
+                <a href="#" class="menu__link-bottom">Nowości</a>
+              </li>
+              <li class="menu__item-bottom">
+                <a href="#" class="menu__link-bottom">Producenci</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="nav-menu nav-menu--right" role="navigation">
+          <ul class="menu menu--right">
+            <li class="menu__item-right">
+              <a href="#" class="menu__link-right menu__link-right--loupe">
+                <img src="./images/search.svg" class="menu__img menu__img--search" alt="search">
+              </a>
+            </li>
+            <li class="menu__item-right">
+              <a href="#" class="menu__link-right">
+                <img src="./images/user.svg" class="menu__img menu__img--user" alt="user">
+              </a>
+            </li>
+            <li class="menu__item-right">
+              <a href="#" class="menu__link-right">
+                <img src="./images/heart.svg" class="menu__img menu__img--heart" alt="heart">
+              </a>
+            </li>
+            <li class="menu__item-right">
+              <a href="#" class="menu__link-right">
+                <img src="./images/basket.svg" class="menu__img menu__img--basket" alt="basket">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end of navigation top -->
+
+    <!-- navigation bottom -->
+    <nav class="nav-menu nav-menu--bottom">
+      <ul class="menu menu--bottom">
+        <li class="menu__item-bottom">
+          <a href="#" class="menu__link-bottom">Damskie</a>
+        </li>
+        <li class="menu__item-bottom">
+          <a href="#" class="menu__link-bottom">Męskie</a>
+        </li>
+        <li class="menu__item-bottom">
+          <a href="#" class="menu__link-bottom">Dziecięce</a>
+        </li>
+        <li class="menu__item-bottom">
+          <a href="#" class="menu__link-bottom">Promocje</a>
+        </li>
+        <li class="menu__item-bottom">
+          <a href="#" class="menu__link-bottom">Nowości</a>
+        </li>
+        <li class="menu__item-bottom">
+          <a href="#" class="menu__link-bottom">Producenci</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of navigation bottom -->
+
+    <!-- search form -->
+    <form action="" class="search">
+      <div class="search-ctn">
+        <input class="search__input" placeholder="Wpisz czego szukasz" name="" value="" type="text">
+        <button class="search__btn">Szukaj</button>
+      </div>
+    </form>
+    <!-- end of search form -->
+  </section>
+</header>
+<!-- end of header -->
+
+<!-- slider -->
+<div class="swiper">
+  <!-- additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- slides -->
+    <div class="swiper-slide swiper-slide--1">
+      <img src="./images/slide-1.png" alt="">
+    </div>
+    <div class="swiper-slide swiper-slide--2">
+      <img src="./images/slide-1.png" alt="">
+    </div>
+    <div class="swiper-slide swiper-slide--3">
+      <img src="./images/slide-1.png" alt="">
+    </div>
+  </div>
+  <!-- if we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- if we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- if we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+<!-- end od slider -->
+
+
+<!-- JS  Scripts -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

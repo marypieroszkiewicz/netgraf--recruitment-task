@@ -1,0 +1,122 @@
+/* ---------------------------------------------------- */
+/* ----- SLIDER ----- */
+/* ---------------------------------------------------- */
+
+.swiper  {
+  &-slide {
+    display: flex;
+  }
+
+  &-button-next, &-button-prev {
+    &::after {
+      font-size: rem(12px);
+    }
+  }
+
+  &-scrollbar {
+    visibility: hidden;
+  }
+}
+
+/* ---------------------------------------------------- */
+/* ----- MEDIA QUERIES -- SLIDER ----- */
+/* ---------------------------------------------------- */
+
+
+@media #{$mobile_land__640} {
+
+  .swiper  {
+    &-button-next, &-button-prev {
+      &::after {
+        font-size: rem(22px);
+      }
+    }
+  }
+}
+
+@media #{$tablet__768} {
+  .swiper  {
+    &-button-next, &-button-prev {
+      &::after {
+        font-size: rem(24px);
+      }
+    }
+  }
+}
+
+@media #{$tablet_land__1024} {
+  .swiper  {
+    &-button-next, &-button-prev {
+      &::after {
+        font-size: rem(30px);
+      }
+    }
+
+    &-button-next {
+      &::after {
+        margin-right: rem(40px);
+      }
+    }
+
+    &-button-prev {
+      &::after {
+        margin-left: rem(40px);
+      }
+    }
+  }
+}
+@media #{$desktop__1280} {
+  .swiper  {
+    &-button-next, &-button-prev {
+      &::after {
+        font-size: rem(35px);
+      }
+    }
+
+    &-button-next {
+      &::after {
+        margin-right: rem(60px);
+      }
+    }
+
+    &-button-prev {
+      &::after {
+        margin-left: rem(60px);
+      }
+    }
+  }
+}
+@media #{$large__screens__1440} {
+  .swiper  {
+    &-button-next, &-button-prev {
+      &::after {
+        font-size: rem(40px);
+      }
+    }
+
+    &-button-next {
+      &::after {
+        margin-right: rem(80px);
+      }
+    }
+
+    &-button-prev {
+      &::after {
+        margin-left: rem(80px);
+      }
+    }
+  }
+}
+
+@media #{$full__screens__1600} {
+  .swiper  {
+    &-button-next, &-button-prev {
+      &::after {
+        font-size: var(--swiper-navigation-size);
+      }
+    }
+  }
+}
+
+/* ----- END OF SLIDER ----- */
+

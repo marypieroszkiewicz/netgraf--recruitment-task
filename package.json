@@ -1,0 +1,27 @@
+{
+  "name": "netgraf--recruitment-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-minify --public-url . --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marypieroszkiewicz/netgraf--recruitment-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marypieroszkiewicz/netgraf--recruitment-task/issues"
+  },
+  "homepage": "https://github.com/marypieroszkiewicz/netgraf--recruitment-task#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.42.1"
+  }
+}
